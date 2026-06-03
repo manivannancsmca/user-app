@@ -46,7 +46,6 @@ public class UserService {
         return userMapper.toDTO(user);
     }
 
-    // UserService (additional methods)
     @Transactional
     public UserDTO updateUser(Long id, UserDTO userDTO) {
         User existingUser = userRepository.findById(id)
